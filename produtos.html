@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamentos | Suporte Fit</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS (necessário para manter o padrão, mesmo que não use aqui) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Seu CSS principal -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- WhatsApp Float Button (opcional) -->
+    <div class="whatsapp-float">
+        <a href="https://api.whatsapp.com/message/MMY5Y3WPRLYHJ1?autoload=1&app_absent=0" target="_blank" aria-label="Fale conosco no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="float-text">Fale Conosco</span>
+        </a>
+    </div>
+
+    <!-- Header (igual ao da index) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Suporte<span class="logo-highlight">Fit</span></span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Início</a></li>
+                    <li><a href="index.html#beneficios" class="nav-link">Benefícios</a></li>
+                    <li><a href="index.html#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="index.html#transformacoes" class="nav-link">Transformações</a></li>
+                    <li><a href="produtos.html" class="nav-link">Medicamentos</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+                
+                <button class="whatsapp-nav-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Fale Conosco</span>
+                </button>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    !-- Seção de Medicamentos Atualizada com Filtro -->
+    <section id="medicamentos" class="plans-original">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">Escolha o Tratamento Ideal para Você</h2>
+                <p class="section-subtitle">
+                    Oferecemos diferentes apresentações e dosagens para adequar ao seu objetivo e perfil. 
+                    Todos com acompanhamento médico profissional.
+                </p>
+            </div>
+            
+            <!-- Abas de Medicamentos -->
+            <div class="medicamento-tabs">
+                <button class="tab-btn active" data-tab="tirzepatida">Tirzepatida</button>
+                <button class="tab-btn" data-tab="tirzepatida-dose-unica">Doses Únicas</button>
+                <button class="tab-btn" data-tab="tirzepatida-mensal">Tratamento Mensal</button>
+                <button class="tab-btn" data-tab="peptideos">Peptídeos</button>
+            </div>
+
+            <div class="plans-container-original">
+            
+                <!-- ================= TIRZEPATIDA - DOSES ÚNICAS ================= -->
+                <!-- Dose 2,5mg -->
+                <div class="plan-card-original" data-category="tirzepatida-dose-unica">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA TG 2,5MG</h3>
+                        <div class="plan-quantity">Dose Única</div>
+                        <div class="plan-dosage">1 seringa pronta para uso</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-2,5mg.png" alt="Tirzepatida TG 2,5mg">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 150,00</div>
+                        <div class="price-installment">ou 12x de R$ 13,85</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original DINAVISA</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inclusa</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Entrega rápida</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 2,5mg Dose Única">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- Dose 5mg -->
+                <div class="plan-card-original" data-category="tirzepatida-dose-unica">
+                    <div class="plan-header-original">
+                        <div class="popular-badge">MAIS VENDIDO</div>
+                        <h3 class="plan-title">TIRZEPATIDA TG 5MG</h3>
+                        <div class="plan-quantity">Dose Única</div>
+                        <div class="plan-dosage">1 seringa pronta para uso</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-5mg.png" alt="Tirzepatida TG 5mg">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 300,00</div>
+                        <div class="price-installment">ou 12x de R$ 27,70</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original DINAVISA</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inclusa</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Entrega rápida</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 5mg Dose Única">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- Dose 7,5mg -->
+                <div class="plan-card-original" data-category="tirzepatida-dose-unica">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA TG 7,5MG</h3>
+                        <div class="plan-quantity">Dose Única</div>
+                        <div class="plan-dosage">1 seringa pronta para uso</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-7,5mg.png" alt="Tirzepatida TG 7,5mg">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 500,00</div>
+                        <div class="price-installment">ou 12x de R$ 46,17</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original DINAVISA</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inclusa</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Entrega rápida</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 7,5mg Dose Única">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- ================= TIRZEPATIDA - TRATAMENTO 1 MÊS (4 SERINGAS) ================= -->
+                <!-- Mensal 2,5mg -->
+                <div class="plan-card-original" data-category="tirzepatida-mensal">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA TG 2,5MG</h3>
+                        <div class="plan-quantity">Tratamento 1 Mês</div>
+                        <div class="plan-dosage">4 seringas (aplicação 1x por semana)</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-2,5mg.png" alt="Tirzepatida TG 2,5mg Mensal">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 500,00</div>
+                        <div class="price-installment">ou 12x de R$ 46,17</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original DINAVISA</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Acompanhamento semanal</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 2,5mg Mensal (4 seringas)">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- Mensal 5mg -->
+                <div class="plan-card-original" data-category="tirzepatida-mensal">
+                    <div class="plan-header-original">
+                        <div class="popular-badge">MAIS VENDIDO</div>
+                        <h3 class="plan-title">TIRZEPATIDA TG 5MG</h3>
+                        <div class="plan-quantity">Tratamento 1 Mês</div>
+                        <div class="plan-dosage">4 seringas (aplicação 1x por semana)</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-5mg.png" alt="Tirzepatida TG 5mg Mensal">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 700,00</div>
+                        <div class="price-installment">ou 12x de R$ 64,65</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original DINAVISA</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Acompanhamento semanal</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 5mg Mensal (4 seringas)">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- Mensal 7,5mg -->
+                <div class="plan-card-original" data-category="tirzepatida-mensal">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA TG 7,5MG</h3>
+                        <div class="plan-quantity">Tratamento 1 Mês</div>
+                        <div class="plan-dosage">4 seringas (aplicação 1x por semana)</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-7,5mg.png" alt="Tirzepatida TG 7,5mg Mensal">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 900,00</div>
+                        <div class="price-installment">ou 12x de R$ 83,13</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original DINAVISA</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Acompanhamento semanal</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 7,5mg Mensal (4 seringas)">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- ================= TIRZEPATIDA - AMPOLAS ================= -->
+                <!-- TG 10mg (40mg total) -->
+                <div class="plan-card-original" data-category="tirzepatida">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA TG 10MG</h3>
+                        <div class="plan-quantity">4 ampolas (40mg total)</div>
+                        <div class="plan-dosage">4 meses tratamento 2,5mg | 2 meses tratamento 5mg</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-10mg-4doses.png" alt="Tirzepatida TG 10mg">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.200,00</div>
+                        <div class="price-installment">ou 12x de R$ 110,84</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Acompanhamento mensal</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original ANVISA</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida TG 10mg 4 ampolas">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- 1 ampola TG 15mg -->
+                <div class="plan-card-original" data-category="tirzepatida">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA TG 15MG</h3>
+                        <div class="plan-quantity">1 Ampola</div>
+                        <div class="plan-dosage">3 doses de 5mg | 6 doses de 2,5mg</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-ampola.jpeg" alt="Tirzepatida TG 15mg 1 Ampola">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 625,00</div>
+                        <div class="price-installment">ou 12x de R$ 57,73</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original ANVISA</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 1 Ampola 15mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- 2 ampolas TG 15mg (30mg totais) -->
+                <div class="plan-card-original" data-category="tirzepatida">
+                    <div class="plan-header-original">
+                        <div class="popular-badge">MAIS VENDIDO</div>
+                        <h3 class="plan-title">TIRZEPATIDA TG 15MG</h3>
+                        <div class="plan-quantity">2 Ampolas (30mg totais)</div>
+                        <div class="plan-dosage">6 doses de 5mg | 12 doses de 2,5mg</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-15mg-2doses.png" alt="Tirzepatida TG 15mg 2 Ampolas">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 850,00</div>
+                        <div class="price-installment">ou 12x de R$ 78,52</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Acompanhamento mensal</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp 24h</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original ANVISA</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 2 Ampolas 15mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- 3 ampolas TG 15mg (45mg totais) -->
+                <div class="plan-card-original" data-category="tirzepatida">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA TG 15MG</h3>
+                        <div class="plan-quantity">3 Ampolas (45mg totais)</div>
+                        <div class="plan-dosage">9 doses de 5mg | 18 doses de 2,5mg</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-15mg-3ampolas.png" alt="Tirzepatida TG 15mg 3 Ampolas">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.300,00</div>
+                        <div class="price-installment">ou 12x de R$ 120,10</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Acompanhamento mensal</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp 24h</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original ANVISA</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 3 Ampolas 15mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- 4 ampolas TG 15mg (60mg total) -->
+                <div class="plan-card-original" data-category="tirzepatida">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA TG 15MG</h3>
+                        <div class="plan-quantity">4 Ampolas (60mg total)</div>
+                        <div class="plan-dosage">12 doses 5mg | 24 doses 2,5mg | 8 doses 7,5mg</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-ampolas.jpeg" alt="Tirzepatida TG 15mg 4 Ampolas">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.500,00</div>
+                        <div class="price-old">R$ 1.800,00</div>
+                        <div class="price-installment">ou 12x de R$ 138,60</div>
+                        <div class="price-save">Economize R$ 300,00</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Acompanhamento mensal</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp 24h</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original ANVISA</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida 4 Ampolas 15mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- ================= TIRZEPATIDA LIPOLAND ================= -->
+                <!-- 4 ampolas 15mg (60mg total) -->
+                <div class="plan-card-original" data-category="tirzepatida">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEPATIDA LIPOLAND 15MG</h3>
+                        <div class="plan-quantity">4 Ampolas (60mg total)</div>
+                        <div class="plan-dosage">12 doses de 5mg | 24 doses de 2,5mg</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-lipoland-4ampolas.jpeg" alt="Tirzepatida Lipoland 4 ampolas">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.500,00</div>
+                        <div class="price-installment">ou 12x de R$ 138,60</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzepatida Lipoland 4 ampolas">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- ================= GLUCONEX 15mg ================= -->
+                <!-- 4 ampolas (60mg total) -->
+                <div class="plan-card-original" data-category="tirzepatida">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">GLUCONEX 15MG</h3>
+                        <div class="plan-quantity">4 Ampolas (60mg total)</div>
+                        <div class="plan-dosage">12 doses de 5mg | 24 doses de 2,5mg</div>
+                    </div>
+                    <img src="assets/img/tizerpatida-tg-ampolas.jpeg" alt="Gluconex 4 ampolas">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.500,00</div>
+                        <div class="price-installment">ou 12x de R$ 138,60</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Gluconex 4 ampolas">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- ================= TIRZEC PEN ================= -->
+                <div class="plan-card-original" data-category="tirzepatida">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TIRZEC PEN (60mg total)</h3>
+                        <div class="plan-quantity">Caneta</div>
+                        <div class="plan-dosage">12 doses de 5mg | 24 doses de 2,5mg</div>
+                    </div>
+                    <img src="assets/img/tizerc-pen-60mg.png" alt="Tirzec Pen">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.700,00</div>
+                        <div class="price-installment">ou 12x de R$ 157,02</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Consulta médica inicial</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Suporte via WhatsApp</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Produto original</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Caneta de fácil aplicação</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tirzec Pen 60mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- ================= PEPTÍDEOS ================= -->
+                <div class="plan-card-original" data-category="peptideos">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">CJC-1295 + IPAMORELI</h3>
+                        <div class="plan-quantity">10mg</div>
+                        <div class="plan-dosage">Estimula GH • Recuperação muscular</div>
+                    </div>
+                    <img src="assets/img/CJC-IPAMORELI.png" alt="CJC-1295 + Ipamorelin">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 950,00</div>
+                        <div class="price-installment">Dose: 1x/dia (noite)</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Aplicação subcutânea</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Duração média: 30 dias</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Melhora do sono e disposição</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="CJC-1295 + Ipamorelin 10mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <div class="plan-card-original" data-category="peptideos">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">TESAMORELIN</h3>
+                        <div class="plan-quantity">10mg</div>
+                        <div class="plan-dosage">Redução de gordura visceral</div>
+                    </div>
+                    <img src="assets/img/peptizio 1.png" alt="Tesamorelin">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.190,00</div>
+                        <div class="price-installment">Microdose: até 10 dias</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Aplicação subcutânea</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>1x ao dia</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Definição corporal</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="Tesamorelin 10mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <div class="plan-card-original" data-category="peptideos">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">GLOW (BPC-157 + TB-500 + GHK-CU)</h3>
+                        <div class="plan-quantity">Ampola</div>
+                        <div class="plan-dosage">Recuperação + pele</div>
+                    </div>
+                    <img src="assets/img/GLOWGHK-TB-500.png" alt="GLOW">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.150,00</div>
+                        <div class="price-installment">Ampola</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Subcutânea</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>30 dias de duração</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Regeneração tecidual</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="GLOW Ampola">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <div class="plan-card-original" data-category="peptideos">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">GLOW ALLUVI (CANETA)</h3>
+                        <div class="plan-quantity">Caneta</div>
+                        <div class="plan-dosage">Pronta aplicação</div>
+                    </div>
+                    <img src="assets/img/glow-ghk-cu.png" alt="GLOW Alluvi">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.900,00</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Prática e fácil</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Pele + regeneração</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="GLOW Alluvi Caneta">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <div class="plan-card-original" data-category="peptideos">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">GHK-CU</h3>
+                        <div class="plan-quantity">50mg</div>
+                        <div class="plan-dosage">Saúde da pele e cabelo</div>
+                    </div>
+                    <img src="assets/img/GHK-CU-50MG.PNG" alt="GHK-CU">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 950,00</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Subcutânea ou tópico</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>30 dias</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Regeneração tecidual</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="GHK-CU 50mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <div class="plan-card-original" data-category="peptideos">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">MOTS-C</h3>
+                        <div class="plan-quantity">10mg</div>
+                        <div class="plan-dosage">Metabolismo e sensibilidade à insulina</div>
+                    </div>
+                    <img src="assets/img/MOTS-C.PNG" alt="MOTS-C">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 900,00</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>2-3x/semana</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Duração 20-30 dias</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="MOTS-C 10mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <div class="plan-card-original" data-category="peptideos">
+                    <div class="plan-header-original">
+                        <h3 class="plan-title">HGH Frag 176-191</h3>
+                        <div class="plan-quantity">10mg</div>
+                        <div class="plan-dosage">Queima de gordura localizada</div>
+                    </div>
+                    <img src="assets/img/HGH-FRAG.PNG" alt="HGH Frag">
+                    <div class="plan-price-original">
+                        <div class="price-main">R$ 1.250,00</div>
+                    </div>
+                    <div class="plan-features-original">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>1-2x/dia</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Subcutânea</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Definição corporal</span></div>
+                    </div>
+                    <button class="plan-button-original" data-plano="HGH Frag 176-191 10mg">
+                        <i class="fab fa-whatsapp"></i><span>COMPRAR AGORA</span>
+                    </button>
+                </div>
+
+                <!-- Bloco de suporte para peptídeos -->
+                <div class="peptide-support">
+                    <h3><i class="fas fa-flask"></i> Importamos todos os tipos de peptídeos e canetas</h3>
+                    <p>Não encontrou o que procura? Fale conosco no WhatsApp e faça seu pedido personalizado.</p>
+                    <a href="https://wa.me/5511960238252?text=Olá!%20Gostaria%20de%20informações%20sobre%20produtos%20não%20listados%20no%20site." class="cta-button" style="background: #FFD700; color: var(--dark); border: none; display: inline-flex; align-items: center; gap: 10px; text-decoration: none;">
+                        <i class="fab fa-whatsapp"></i> FALE COM NOSSO ESPECIALISTA
+                    </a>
+                    <p style="margin-top: 1rem; opacity: 0.9;">Estamos prontos para ajudar você 💚</p>
+                </div>
+            </div>
+
+            <!-- Aviso Médico -->
+    <section class="medical-notice-original" aria-labelledby="medicalNoticeTitle">
+
+        <div class="notice-icon">
+            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+        </div>
+
+        <div class="notice-content">
+            <h4 id="medicalNoticeTitle">
+                ⚠️ Acompanhamento Médico é Essencial
+            </h4>
+
+            <p>
+                Estes medicamentos exigem prescrição e acompanhamento profissional.
+                Todos os pacientes recebem suporte de médicos especializados durante
+                todo o tratamento para garantir segurança e melhores resultados.
+            </p>
+
+            <div class="notice-features">
+
+                <div class="notice-feature">
+                    <i class="fas fa-user-md" aria-hidden="true"></i>
+                    <span>Consulta inicial com médico especializado</span>
+                </div>
+
+                <div class="notice-feature">
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    <span>Avaliação completa de saúde e histórico clínico</span>
+                </div>
+
+                <div class="notice-feature">
+                    <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                    <span>Acompanhamento periódico (semanal ou mensal)</span>
+                </div>
+
+                <div class="notice-feature">
+                    <i class="fas fa-syringe" aria-hidden="true"></i>
+                    <span>Ajuste de dosagem conforme necessidade médica</span>
+                </div>
+
+                <div class="notice-feature">
+                    <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                    <span>Monitoramento contínuo de possíveis efeitos</span>
+                </div>
+
+                <div class="notice-feature">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    <span>Suporte direto via WhatsApp</span>
+                </div>
+
+            </div>
+
+            <div class="legal-warning" role="alert">
+                <p>
+                    <strong>Atenção:</strong> Estes produtos são medicamentos.
+                    O uso pode apresentar riscos. Consulte sempre um médico
+                    e farmacêutico. Leia a bula. Produtos originais e
+                    regularizados conforme normas da ANVISA.
+                </p>
+            </div>
+
+        </div>
+        
+    </section>
+        </div>
+    </section>
+    
+    
+    <!-- Seção de Envio e Refrigeração -->
+    <section class="shipping-section highlight-bg">
+        <div class="container">
+            <div class="shipping-content">
+            <h2 class="section-title">🚚 <span class="highlight">Envios</span></h2>
+            <p class="shipping-text">Enviamos para todo o Brasil através de transportadora.</p>
+
+            <div class="shipping-details">
+                <div class="shipping-item">
+                    <i class="fas fa-tag"></i>
+                    <span><strong>Frete fixo:</strong> R$ 20,00</span>
+                </div>
+                <div class="shipping-item">
+                    <i class="fas fa-clock"></i>
+                    <span><strong>Prazo de entrega:</strong> 3 a 7 dias úteis, dependendo da sua região.</span>
+                </div>
+            </div>
+
+            <hr class="shipping-divider">
+
+                <div class="refrigeration-info">
+                <h3><i class="fas fa-snowflake"></i> E a refrigeração?</h3>
+                <p>Muitas pessoas perguntam sobre isso, e é uma dúvida totalmente válida.</p>
+                <p>Segundo a bula das tirzepatidas, o medicamento pode permanecer fora de refrigeração por até <strong>21 dias</strong>, desde que mantido em temperatura ambiente controlada.</p>
+                <p>O prazo médio do transporte é de 3 a 7 dias, ou seja, está dentro do período seguro descrito pelo fabricante.</p>
+                <p class="refrigeration-note">Assim que o produto chegar, orientamos que seja armazenado corretamente em refrigerador, conforme instruções enviadas junto com o pedido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span></h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Quantos kg posso perder em 1 mês?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Depende do organismo e da alimentação. Em média, pessoas relatam perda de 3 a 7kg no primeiro mês.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        E em 1 semana?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Na primeira semana pode haver redução de inchaço e retenção, mas os resultados variam de pessoa para pessoa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Quais são os efeitos colaterais?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Os mais comuns são:</p>
+                        <ul>
+                            <li>Náusea leve</li>
+                            <li>Sensação de estômago cheio</li>
+                            <li>Diminuição do apetite</li>
+                        </ul>
+                        <p>Normalmente são leves e melhoram com o tempo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Tem contraindicações?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não é indicado para:</p>
+                        <ul>
+                            <li>Gestantes</li>
+                            <li>Mulheres que estão amamentando</li>
+                            <li>Pessoas com histórico de alguns problemas hormonais específicos</li>
+                        </ul>
+                        <p>Sempre orientamos buscar avaliação médica.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Posso beber usando?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O ideal é evitar ou reduzir o consumo de álcool para melhores resultados.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Quem amamenta pode usar?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não é indicado durante a amamentação.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Qual dose devo começar?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A maioria das pessoas inicia com 2,5mg.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Onde aplico?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A aplicação é subcutânea (embaixo da pele), geralmente:</p>
+                        <ul>
+                            <li>Abdômen</li>
+                            <li>Coxa</li>
+                            <li>Braço</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Vocês dão suporte?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Ensinamos como fracionar, como aplicar, onde aplicar e o armazenamento correto.</p>
+                        <p>Tudo através de vídeos explicativos e tutoriais, além de suporte direto no WhatsApp.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Comece sua <span class="highlight">transformação</span> hoje mesmo!</h2>
+                <p class="cta-text">Não espere mais. Fale com nosso médico especialista agora mesmo pelo WhatsApp.</p>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Resposta em menos de 5 minutos</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-lock"></i>
+                        <span>Consulta 100% confidencial</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-user-md"></i>
+                        <span>Avaliação médica gratuita</span>
+                    </div>
+                </div>
+                <button class="cta-button whatsapp-cta">
+                    <i class="fab fa-whatsapp"></i>
+                    FALE COM ESPECIALISTA AGORA
+                </button>
+                <p class="cta-note">Este produto é um medicamento. Seu uso pode trazer riscos. Procure o médico e o farmacêutico. Leia a bula. Todos os produtos são originais e aprovados pela ANVISA.</p>
+            </div>
+        </div>
+    </section>
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text-footer">Suporte<span class="logo-highlight">Fit</span></span>
+                    </div>
+                    <p class="footer-description">Tratamento especializado com Tirzepatida e acompanhamento médico profissional para transformação corporal segura e eficaz.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/recomecarviver01?igsh=MXBnYmNoMTl4dWh5aw%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> -->
+                        <a href="https://wa.me/5511960238252" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#transformacoes">Transformações</a></li>
+                        <li><a href="#medicamentos">Medicamentos</a></li>
+                        <li><a href="#faq">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> (11) 96023-8252</li>
+                        <li><i class="fas fa-envelope"></i> contato@suportefit.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+                    </ul>
+                    <button class="footer-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Rápido
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Suporte Fit. Todos os direitos reservados.</p>
+                <p>Este site é apenas para fins informativos. Consulte um médico antes de iniciar qualquer tratamento.</p>
+            </div>
+            
+            <div class="footer-credits">
+                <div class="credits-content">
+                    <span class="credits-text">Desenvolvido por</span>
+                    <div class="jaguarsoft-logo">
+                            <text x="40" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" 
+                                  fill="url(#jaguarGradient)">
+                                JaguarSoft
+                            </text>
+                            <text x="40" y="27" font-family="Arial, sans-serif" font-size="8" fill="#666">
+                                Soluções Digitais
+                            </text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- Nosso JavaScript externo -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
